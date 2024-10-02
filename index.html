@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="icon" href="imgs/fav_icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="genpage">
+        <div class="pagecard">
+            <!-- Title and Quote -->
+            <div class="titlediv">
+                <h1 class="pdgen_title"><span>P@$$W0RD </span> GENERATOR</h1>
+                <h2 class="pdgen_para">🔐Unlock Your Digital Fortress with <span>Unbreakable</span> Passwords!</h2>
+            </div>
+
+            <br><br>
+
+            <!-- Password Parameters -->
+            <div class="condiv">
+                <div class="sliderdiv">
+                    <input type="range" min="8" max="30" value="8" class="slider" id="lenrange">
+                    <div class="value">Password Length: <span id="lennum">8</span></div>
+                </div>
+                <div class="algdiv">
+                    <select class="selbox" name="algorithms" id="algs">
+                        <option value="1">Random Gen</option>
+                        <option value="2">AES Encryption</option>
+                        <option value="3">DES Encryption</option>
+                        <option value="4">ROT13 Encryption</option>
+                        <option value="5">Caesar Cipher</option>
+                    </select>
+                </div>
+                <input class="lenbox" type="number" placeholder="No. of. Shift" id="shiftlen">
+            </div>
+
+            <br><br><br>
+
+            <!-- Generation and Encryption -->
+            <div class="gendiv">
+                <button class="genbtn" onclick="createpwd()">Generate Password</button>
+                <input class="genbox" type="text" placeholder="Passwords will be Generated Here...." id="pwd" readonly>
+                <br><br>
+                <button class="encbtn" onclick="encryptPassword()">Encrypt Password</button>
+                <input class="encbox" type="text" placeholder="Passwords Encryptions will be Generated Here....." id="encryptedPassword" readonly>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signature -->
+    <div class="sign">
+        Made By :
+        <div class="ID">
+            Santhosh S
+            <br>
+            santhosh5542@gmail.com
+        </div>
+    </div>
+
+    <!-- Scripts and Library -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+</body>
+
+</html>
