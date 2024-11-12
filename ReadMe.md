@@ -40,13 +40,13 @@ This project is a password generator webpage that allows users to create strong,
 ## Encryption Algorithms  
 
 ### AES (Advanced Encryption Standard)
-    AES is a symmetric encryption algorithm widely used across the globe. It provides a high level of security and is used in various applications.  
+   AES is a symmetric encryption algorithm widely used across the globe. It provides a high level of security and is used in various applications.  
 
 ### DES (Data Encryption Standard)
-    DES is an older symmetric encryption algorithm that was widely used in the past. It has been largely replaced by AES due to its shorter key length and lower security.  
+   DES is an older symmetric encryption algorithm that was widely used in the past. It has been largely replaced by AES due to its shorter key length and lower security.  
 
 ### ROT13 (Rotate by 13 places)
-    ROT13 is a simple substitution cipher that replaces each letter with the letter 13 places after it in the alphabet. It is not suitable for serious encryption but is often used for obfuscating text.  
+   ROT13 is a simple substitution cipher that replaces each letter with the letter 13 places after it in the alphabet. It is not suitable for serious encryption but is often used for obfuscating text.  
 
 ### Caesar Cipher
-    The Caesar Cipher is a substitution cipher where each letter in the plaintext is shifted a certain number of places down the alphabet. It is one of the simplest and most widely known encryption techniques.  
+   The Caesar Cipher is a substitution cipher where each letter in the plaintext is shifted a certain number of places down the alphabet. It is one of the simplest and most widely known encryption techniques.  
