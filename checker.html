@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="icon" href="imgs/fav_icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="checker.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>🔏Enter Your <span class="deco">P@$$W0RD</span></h2>
+        <br><br>
+        <input class="pdchkbox" type="password" id="password" placeholder="Your Password">
+        <div class="strength" id="strengthText">Strength: 🤔</div>
+        <br>
+        <ul id="suggestions">
+            <li id="len"><span class="icon"> • </span> Password must contain at least 8 Characters</li>
+            <li id="upper"><span class="icon"> • </span> Password must contain both Uppercase and Lowercase</li>
+            <li id="num"><span class="icon"> • </span> Password must contain Numerical values</li>
+            <li id="special"><span class="icon"> • </span> Password must contain any special character</li>
+        </ul>
+        <br><br>
+        <button class="home_btn" onclick="location.href='index.html'">Back to Generator</button>
+    </div>
+
+    <script src="checker.js"></script>
+</body>
+
+</html>
