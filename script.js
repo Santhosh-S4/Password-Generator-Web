@@ -42,7 +42,7 @@ function encryptPassword() {
 
     // Function for NO Encryption
     if (algorithm == "1") {
-        document.getElementById('encryptedPassword').value = "Encryption NOT Implemented (Select a Encryption)";
+        alert("Encryption NOT Implemented (Select a Encryption)");
     }
 
 
@@ -79,7 +79,14 @@ function encryptPassword() {
     // Function to encrypt the password using Caesar Cipher
     else if (algorithm == "5") {
         const password = document.getElementById('pwd').value;
-        const shift = parseInt(document.getElementById('shiftlen').value, 10);
+        const shiftInput = document.getElementById('shiftlen');
+    const shift = parseInt(shiftInput.value, 10);
+
+    if (!shift || isNaN(shift)) {
+        alert("Bruh, Enter a valid Shift value greater than 0");
+        shiftInput.focus();
+        return;
+    }
         const encrypted = caesarCipher(password, shift);
         document.getElementById('encryptedPassword').value = encrypted;
     }

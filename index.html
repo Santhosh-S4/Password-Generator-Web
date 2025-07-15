@@ -8,7 +8,6 @@
     <link rel="icon" href="imgs/fav_icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -17,8 +16,8 @@
         <div class="pagecard">
             <!-- Title and Quote -->
             <div class="titlediv">
-                <h1 class="pdgen_title"><span>P@$$W0RD </span> GENERATOR</h1>
-                <h2 class="pdgen_para">🔐Unlock Your Digital Fortress with <span>Unbreakable</span> Passwords!</h2>
+                <h1 class="pdgen_title"><span class="deco">P@$$W0RD </span> GENERATOR</h1><br><br>
+                <h2 class="pdgen_para">🔐Unlock Your Digital Fortress with <span class="deco">Unbreakable</span> Passwords!</h2>
             </div>
 
             <br><br>
@@ -31,7 +30,7 @@
                 </div>
                 <div class="algdiv">
                     <select class="selbox" name="algorithms" id="algs">
-                        <option value="1">Random Gen</option>
+                        <option value="1">Random Generation</option>
                         <option value="2">AES Encryption</option>
                         <option value="3">DES Encryption</option>
                         <option value="4">ROT13 Encryption</option>
@@ -49,10 +48,24 @@
                 <input class="genbox" type="text" placeholder="Passwords will be Generated Here...." id="pwd" readonly>
                 <br><br>
                 <button class="encbtn" onclick="encryptPassword()">Encrypt Password</button>
-                <input class="encbox" type="text" placeholder="Passwords Encryptions will be Generated Here....." id="encryptedPassword" readonly>
+                <input class="encbox" type="text" placeholder="Passwords Encryptions will be Generated Here....."
+                    id="encryptedPassword" readonly>
             </div>
         </div>
+        <br>
+        <div class="pdstrchk">
+            <div>
+                <img src="imgs/download.png" width="70px" height="72px" alt="chk_icon">
+            </div>
+            <div>
+                <h2 class="pdgen_para">Check Your <span class="deco">P@$$W0RD</span> Strength!</h2>
+                <br>
+                <button class="pdstrchk_btn" onclick="location.href='checker.html'">Strength Checker</button>
+            </div>
+
+        </div>
     </div>
+
 
     <!-- Signature -->
     <div class="sign">
